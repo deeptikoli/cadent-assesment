@@ -1,0 +1,31 @@
+{
+  "name": "test-sass",
+  "version": "1.0.0",
+  "description": "Aptitude test the tests a candidates ability to implement CSS via Sass in an effective an scalable manner",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run serve && npm style:watch",
+    "serve": "node server/index.js",
+    "style": "node-sass styles/index.scss index.css -o dist",
+    "style:watch": "npm run style && node-sass styles/index.scss -wo dist",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Drew DeCarme (ddecarme@cadent.tv)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cadent-front-end/test-sass/issues"
+  },
+  "homepage": "https://github.com/cadent-front-end/test-sass#readme",
+  "dependencies": {
+    "bootstrap": "4.6.0",
+    "materialize-css": "1.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.17.2"
+  }
+}
